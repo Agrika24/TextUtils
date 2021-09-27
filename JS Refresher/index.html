@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict"
+        let a = 34
+        a = 890 + 6
+        console.log(a);
+        // Numbers
+        // Objects
+        // booleans - true or falseString
+        // undefined
+        // null
+
+       function hello(){
+           console.log("Welcome")
+       } 
+
+       let obj = {
+           r:89,
+           t:90,
+           func: function myfunc(number) {
+            console.log("The number is :" +number)
+           }
+       }
+
+       document.addEventListener("click",function click() {
+           console.log("You have clicked")
+        //    alert("hello")
+        let conf = confirm("Are you sure?");
+        console.log(conf);
+       })
+
+      
+    //    for (let index = 0; index < array.length; index++) {
+    //        const element = array[index];
+           
+    //    }
+
+    let arr = [34,21,57];
+    console.log(this);
+    // function myfunc(number) {
+    //         console.log("The number is :" + this);
+    //        }
+   
+     let myfunc = (number) => {
+            console.log("The number is :" + this);
+           }
+    myfunc();
+
+    setTimeout( () => {
+        console.log("Yayy")
+    }, 10000);
+    console.log("Agrika gupta")
+   
+
+    </script>
+</head>
+<body>
+    <h1>I am learning JS</h1>
+</body>
+</html>
